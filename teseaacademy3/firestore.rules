@@ -1,0 +1,62 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Global Helper Functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Default Deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // User profiles collection
+    match /users/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId);
+      allow delete: if isOwner(userId);
+    }
+
+    // Transactions collection
+    match /transactions/{transactionId} {
+      allow read: if true;
+      allow create, update: if true;
+    }
+
+    // School inquiries collection
+    match /school_inquiries/{inquiryId} {
+      allow read: if true;
+      allow create: if true;
+    }
+
+    // Learning contents collection
+    match /learning_contents/{contentId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Learning sessions collection
+    match /learning_sessions/{sessionId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Activity logs collection
+    match /activity_logs/{activityId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Assessments collection
+    match /assessments/{assessmentId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}

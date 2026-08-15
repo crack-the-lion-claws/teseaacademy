@@ -1,0 +1,6 @@
+{
+  "name": "TESEA Academy Subscriptions",
+  "description": "TESEA Academy learning platform with live student-driven admin analytics, content management, and curriculum workflows",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
