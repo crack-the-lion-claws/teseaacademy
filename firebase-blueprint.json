@@ -1,0 +1,76 @@
+{
+  "collections": {
+    "users": {
+      "uid": "string",
+      "email": "string",
+      "name": "string",
+      "role": "string",
+      "form": "string",
+      "page": "string",
+      "subject": "string",
+      "topic": "number",
+      "lessonMode": "string",
+      "progress": "map",
+      "topicProgress": "map",
+      "lessonProgress": "map",
+      "quizHistory": "array",
+      "evidenceLedger": "map",
+      "subscription": "map",
+      "createdAt": "timestamp",
+      "updatedAt": "timestamp"
+    },
+    "events": {
+      "type": "string",
+      "detail": "string",
+      "actor": "string",
+      "at": "timestamp"
+    },
+    "announcements": {
+      "title": "string",
+      "message": "string",
+      "audience": "string",
+      "priority": "string",
+      "authorId": "string",
+      "createdAt": "timestamp"
+    },
+    "community_posts": {
+      "channelId": "string",
+      "author": "string",
+      "role": "string",
+      "text": "string",
+      "at": "timestamp",
+      "replies": "number",
+      "likes": "number",
+      "status": "string"
+    },
+    "community_channels": {
+      "name": "string",
+      "subject": "string",
+      "topic": "string"
+    },
+    "crm_leads": {
+      "name": "string",
+      "type": "string",
+      "email": "string",
+      "phone": "string",
+      "interest": "string",
+      "source": "string",
+      "stage": "string",
+      "score": "number",
+      "owner": "string",
+      "consent": "boolean",
+      "next": "string",
+      "last": "timestamp"
+    },
+    "customers": {
+      "name": "string",
+      "email": "string",
+      "segment": "string",
+      "plan": "string",
+      "status": "string",
+      "health": "number",
+      "lastLearning": "string",
+      "renewal": "string"
+    }
+  }
+}
