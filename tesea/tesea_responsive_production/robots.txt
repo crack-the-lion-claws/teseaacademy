@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /#/learner/
-Disallow: /#/tutor/
-Disallow: /#/admin/
-Disallow: /#/crm/
-Sitemap: https://teseaacademy.ac.tz/sitemap.xml

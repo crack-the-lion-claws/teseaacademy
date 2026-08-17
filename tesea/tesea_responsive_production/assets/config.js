@@ -1,9 +1,0 @@
-window.TESEA_CONFIG={
-  apiBaseUrl:'',
-  apiVersion:'v1',
-  mode:'mock',
-  oauth:{
-    google:{clientId:'',redirectUri:''},
-    microsoft:{clientId:'',tenant:'common',redirectUri:''}
-  }
-};

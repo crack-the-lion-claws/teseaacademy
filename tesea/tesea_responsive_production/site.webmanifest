@@ -1,9 +1,0 @@
-{
-  "name": "TESEA Academy",
-  "short_name": "TESEA",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#f7f3ef",
-  "theme_color": "#962f50",
-  "icons": [{"src":"/assets/tesea-logo.png","sizes":"512x512","type":"image/png"}]
-}

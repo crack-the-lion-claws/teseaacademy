@@ -1,6 +1,0 @@
-{
-  "name": "TESEA Academy",
-  "description": "TESEA Academy NECTA Competency-Based Learning Platform",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
